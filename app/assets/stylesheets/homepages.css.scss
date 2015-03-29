@@ -1,0 +1,39 @@
+// Place all the styles related to the homepages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container-fluid {
+	background-color: black;
+	color: white;
+}
+
+body {
+	background-color: black;
+}
+
+#title {
+	font-size: 160px;
+	font-family: Cambria, sans-serif; 
+    color: white;
+    text-shadow: 2px 2px black;
+    text-align: left;
+}
+
+#mission {
+	text-align: center;
+	font-size: 15px;
+	font-style: italic;
+}
+
+#top {
+   border: 5px solid black;
+   background: linear-gradient(to bottom right, black, #990000, grey, white);
+}
+
+.image img{
+   height: 100%;
+   width: 100%;
+   border-right-width: 10px;
+   border-right-color: black;
+   border-right-style: solid;
+}
