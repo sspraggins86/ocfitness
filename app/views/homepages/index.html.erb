@@ -1,58 +1,89 @@
-
-
  <div id="top">
   <div class="row">
   <div class="col-md-3">
    <div class="image">
-    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQ0he6kWhX7tK1ZWuwPnfTtL3FRfVkb90oz1DFsmUIsLKkErtkCA">
+    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQ0he6kWhX7tK1ZWuwPnfTtL3FRfVkb90oz1DFsmUIsLKkErtkCA" class="img-responsive" alt="Responsive image">
    </div>
   </div>
   <div class="col-md-9">
    <br />
    <br />
    <h1 id="title">OC Fitness</h1>
+   <h1 id="personal">Personal Training</h1>
   </div>
   </div>
   </div>
   <br />
-  <div class="container-fluid">
-   <p id="mission">"Training strategies and programs carefully designed according to the clients goals. Special attention is always given to training technique and intensity." <br />"I incorporate full body resistance training that emphasizes full range of motion."</p>
+  <!-- after logo/name -->
+  
+   <p id="mission">"Training strategies and programs carefully designed according to the clients goals. Special attention is always given to training technique and intensity." <br />"I incorporate full body resistance training that emphasizes full range of motion."</p>   
+   <hr />
+
+  <div class="container">
+    <div class="col-md-12">
+      <h3>Meet our Trainers:</h3>
+      <p class="p">James Spraggins and Erika Ramirez are the trainers here at OC Fitness. Contact them today to make an appointment!<br /><span class="glyphicon glyphicon-heart"></span></p>
+      <br />
+    </div>
+  <div class="row">
+   <div id="james2" class="col-md-6">
+    <img id="James" src="http://i.imgur.com/iCYERB1.png">
+    <h2 class="main">James Spraggins</h2>
+   </div>
+   <div id="erika2" class="col-md-6">
+   <img id="Erika" src="http://i.imgur.com/av83GBg.png"/>
+    <h2 class="main">Erika Ramirez</h2>
+   </div>
+   </div>
    <br />
-  <div class="row">
-   <div class="col-md-6">
-    <h2>Pics of Pops</h2>
-   </div>
-   <div class="col-md-6">
-    <h2>Pics of Erika</h2>
-   </div>
-  </div>
+   <br />
+   <h1 class="contact">Contact Us:</h1> 
+      <hr />
+      <p class="info"><span class="glyphicon glyphicon-earphone"></span>  Call us at (714) 364-7957</p>
+      <p class="info"><span class="glyphicon glyphicon-envelope"></span>  Eamil us at: oc_fitness@yahoo.com</p>
+      <p class="info"><span class="glyphicon glyphicon-home"></span>  1024 North Tustin Street Orange, CA 92867</p>
+ 
   <br />
   <div class="row">
    <div class="col-md-4">
-    <h3>Services</h3>
+    <h3 id="serv"><%= link_to "Services", service_path %></h3>
    </div>
    <div class="col-md-4">
-    <h3>Online Programs</h3>
+    <h3 id="op"><%= link_to "Online Programs", onlineprog_path %></h3>
    </div>
    <div class="col-md-4">
-    <h3>Testimonials</h3>
+    <h3 id="testies"><%= link_to "Testimonials", testimonial_path %></h3>
    </div>
   </div>
-  <br />
-  <div class="row">
-   <div class="col-md-6">
-    <h3>Make an Appointment</h3>
-   </div>
-   <div class="col-md-6">
-    <h3>Contact Us</h3>
-   </div>
+  </div>
+
+<!--  attempt at a modal..failed -__- -->
+<!-- <div class="modal fade" id="contact" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+          <h1 class="main">Contact Us</h1> 
+        <div class="modal-body">
+          <div class="container">
+            <h1 class="main">Contact Us</h1> 
+            <hr />
+            <p class="info"><span class="glyphicon glyphicon-earphone"></span>  Call us at (714) 364-7957</p>
+            <p class="info"><span class="glyphicon glyphicon-envelope"></span>  Eamil us at: oc_fitness@yahoo.com</p>
+            <p class="info"><span class="glyphicon glyphicon-home"></span>  1024 North Tustin Street Orange, CA 92867</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-default">
+        </div>
+
+      </div>
+    </div>
   </div>
 </div>
+ -->
 
 
 
-<div class="footer">
- <div class="container">
-  <p> The footer area</p>
- </div>
-</div>
+
+
+

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-custom navbar-static-top">
+<nav class="navbar navbar-custom navbar-fixed-bottom">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -8,18 +8,17 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img src="">OC Fitness</a>
     </div>
 
  <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id=".navbar-collapse">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="">
+      <ul class="nav navbar-nav navbar-inner">
+        <li class="links">
                <%= link_to "Home", homepages_path %><span class="sr-only">(current)</span></li>
-           <!-- <li><%#= link_to "Mission", mission_path %></li> -->
            <li><%= link_to "Services", service_path %></li>
            <li><%= link_to "Online Programs", onlineprog_path %></li>
            <li><%= link_to "Testimonials", testimonial_path %></li>
+           
            <li><%= link_to "Contact Us", contact_path %></li>
         </li>
       </ul>
@@ -31,4 +30,3 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
