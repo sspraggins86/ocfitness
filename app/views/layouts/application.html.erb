@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Audiowide">
   <!-- Bootstrap -->
     
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -27,6 +29,31 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
+ 
+ <!--  GOOGLE MAPS -->
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var myLatlng = new google.maps.LatLng(33.8044230, -117.8363400);
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(33.8044230, -117.8363400),
+          zoom: 10,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          animation: google.maps.Animation.DROP,
+          label: 'OC Fitness'
+        });
+        google.maps.event.addListener(marker, 'click', toggleBounce);
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 
 </head>
 
